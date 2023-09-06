@@ -1,0 +1,48 @@
+.full{
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    height: 55%;
+    border: 2px solid #00ccff07;
+}
+
+.ava{
+    width: 58px;
+    height: 72px;        }
+
+.date{
+    display: grid;
+    align-content: end;
+    justify-items: end;
+    width: 110px;
+}
+.post{
+    font-size: 8pt;
+}
+
+.exit{
+    color: #888;
+    size: 10px;
+}
+
+.full button{
+font-size: 12px;
+    height: 19px;
+    background-color: #ff8282da;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+}
+
+
+   A {
+    color: rgb(255, 0, 0); /* Цвет ссылок */
+    font-weight: 600;
+    font-size: 13px;
+    width: auto;
+   }
+   A:visited {
+    color: #7c2525; /* Цвет посещенных ссылок */
+    font-weight: 900;
+   }
+   A:active {
+    color: #ff0000; /* Цвет активных ссылок */
+   }
