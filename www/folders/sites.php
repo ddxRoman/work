@@ -16,6 +16,7 @@ require_once "../function/checkaut.php";
 <a href="https://master-gadget.ru" target="_blank"><button>Мастер Гаджет</button></a>
 <a href="https://justyabloko.ru" target="_blank"><button>Яблоко</button></a>
 <a href="https://dontelevizor.ru/" target="_blank"><button>Телевизор</button></a> 
+<a href="https://kolbiko.com/" target="_blank"><button>Колбико</button></a> 
 <a href="https://dartsite.ru/" target="_blank"><button class="site_btn">DART SITE</button></a>
 <a href="https://teamweb-agency.ru" target="_blank"><button class="site_btn">TeamWeb</button></a>
 <a href="https://vethelp911.ru/" target="_blank"><button class="site_btn">VetHelp</button></a><br>
