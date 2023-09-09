@@ -19,7 +19,7 @@ require_once "../function/checkaut.php";
 <a href="https://kolbiko.com/" target="_blank"><button>Колбико</button></a> 
 <a href="https://dartsite.ru/" target="_blank"><button class="site_btn">DART SITE</button></a>
 <a href="https://teamweb-agency.ru" target="_blank"><button class="site_btn">TeamWeb</button></a>
-<a href="https://vethelp911.ru/" target="_blank"><button class="site_btn">VetHelp</button></a><br>
+<a href="https://vethelp911.ru/" target="_blank"><button class="site_btn">VetHelp</button></a>
 <a href="https://vremya-dobryh.ru/" target="_blank"><button>Время Добрых</button></a>
 </div>
 
