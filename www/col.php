@@ -24,10 +24,10 @@ $button = mysqli_fetch_all($button); // Выбирает все строки и�
 
         <div class="container">
         <div class="row align-items-center">
-            <div class="border col-md-3 col-xs-12" >  
+            <div class="border col-md-3 col-sm-6 col-8 " >  
             <? require_once "folders/quick_transition.php"; ?>
         </div>
-            <div class="border col-md-6 col-xs-12 text-center align-middle">
+            <div class="border col-md-6 col-sm-2 col-2 text-center align-middle">
  <? if($_SESSION['user']['status'] == 9){?>
                     <a href="index_admin.php" target="_self">
                     <!--  Просто кнопка на Админка -->
@@ -38,19 +38,14 @@ $button = mysqli_fetch_all($button); // Выбирает все строки и�
                     <!--  Просто кнопка на Хелпер -->
                     <button class="MD">База знаний</button>
                 </a><!--  Просто кнопка на Хелпер --> <?}?>
-
-
         </div> 
-            <div class="border col-md-3 col-xs-12 text-end">
+            <div class="border col-md-3 col-sm-3 col-12  text-end">
  <? require_once "action/profileindex2.php"; ?>
         </div>               
         </div>
     </div>
 
-
-
-    <div class="container col-md-12 col-sm-12 col-xs-6 navbar" >
-    <div class="MisPanel">
+    <div class="container col-md-12 col-sm-12 col-xs-12 navbar MisPanel" >
            <? $mailLink=$_SESSION['user']['mail'];
             ?>
             <a href="action/users/settings.php" target="_blank"><button><img src="file/icons/settings.png" >Настройки</button></a>
@@ -63,15 +58,10 @@ $button = mysqli_fetch_all($button); // Выбирает все строки и�
             <a href="https://calendar.google.com/calendar/u/0/r?cid=medcloud.pro@gmail.com" target="_blank"><button>Календарь</button></a>
             <a href="folders/countsymbolForm.php" target="1"><button>Подсчёт</button></a>
            </div><!-- Тут заканчивается МИС панель-->
-    </div>
-
-
     <hr class="misPanel-hr" width="85%"><!-- ХРка полоска -->
-
-
         <div class="container">
             <div class="row">
-                <div class="col-md-1 col-sm-12">
+                <div class="col-md-1 col-sm-3 col-4">
                     <div class="lmenu"> 
                  <a href="folders/docs.php" target="1"><button>Доки</button></a>
                     <a href="folders/helper.php" target="1"><button>Хелпер</button></a>      
@@ -88,7 +78,7 @@ $button = mysqli_fetch_all($button); // Выбирает все строки и�
             ?>
                 </div>
                 </div>
-                <div class="col-md-8 col-sm-12 frame">
+                <div class="col-md-8 col-sm-9 col-12 frame">
                      <iframe name="1" src="folders/news.php">
                     
                 </iframe>
@@ -113,10 +103,10 @@ $button = mysqli_fetch_all($button); // Выбирает все строки и�
 <footer>
             <div class="container-fluid">
                 <div class="row align-items-center">
-                    <div class="col-md-3 col-sm-2 text-center"><?require_once 'function/weather.php';?></div>
-                    <div class="col-md-6 col-sm-8 text-center"><p class="ink"><img src="file/icons/Logo.png" alt="test"><br>
+                    <div class="col-md-3 col-sm-2 col-5 text-center"><?require_once 'function/weather.php';?></div>
+                    <div class="col-md-6 col-sm-8 col-2 text-center"><p class="ink"><img src="file/icons/Logo.png" alt="test"><br>
                  ORStudio <br> Оксентий Роман Сергеевич Студио <br> Copyright 2022-2023 </p></div>
-                    <div class="col-md-3 col-sm-2 text-center">
+                    <div class="col-md-3 col-sm-2 col-5 text-center">
                         
                         <div id="clock" class="clock">         
             <script src="JavaScript/clock.js">
@@ -127,7 +117,5 @@ $button = mysqli_fetch_all($button); // Выбирает все строки и�
                 </div>
             </div>
 </footer>
-
-
 </body>
 </html>

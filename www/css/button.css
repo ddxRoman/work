@@ -72,15 +72,16 @@ width: 55%;
 .lmenu button {
   border-color: rgb(230, 153, 123);
   border-radius: 4px;
-  min-width: 80%;
+  min-width: 100%;
   margin: 1px;
   padding: 3px;
+
 }
 
 .lmenu button:hover {
   border-color: rgb(204, 130, 101);
   border-radius: 4px;
-  min-width: 80%;
+  min-width: 103%;
   margin: 1px;
   padding: 3px;
 }
@@ -91,6 +92,7 @@ width: 55%;
     border-color: rgb(230, 153, 123);
     min-width: 6.5%;
     padding: 2px;
+    border-radius: 15px;
 }
 
 .MisPanel button:hover {
