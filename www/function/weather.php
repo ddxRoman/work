@@ -34,8 +34,6 @@ $currentTime = time();
         font-size: 12pt;
     }
 </style>
-
-
     <?php 
     
             $temp = $data->main->temp_max;
@@ -54,6 +52,9 @@ $currentTime = time();
                     if($data->weather[0]->description=="небольшая облачность"){
                         ?> <img src="../file/icons/weather/littlBigCloud.png" width="30px"><?
                 } else  if($data->weather[0]->description=="небольшой проливной дождь"){
+                    ?> <img src="../file/icons/weather/small_rain.png" width="30px"><?
+                }
+                else if($data->weather[0]->description=="небольшой дождь"){
                     ?> <img src="../file/icons/weather/small_rain.png" width="30px"><?
                 }
                 else

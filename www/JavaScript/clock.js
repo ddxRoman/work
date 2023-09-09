@@ -14,7 +14,7 @@ function currentTime() {
   min = updateTime(min);
   sec = updateTime(sec);
   month = monthNames[month];
-  document.getElementById("clock").innerText = day + " " +  month + " " + year + "\n"+  hour + " : " + min + " : " + sec; /* adding time to the div */
+  document.getElementById("clock").innerText = hour + " : " + min + " : " + sec + "\n"+  day + " " +  month + " " + year; /* adding time to the div */
     var t = setTimeout(function(){ currentTime() }, 1000); /* setting timer */
 }
 

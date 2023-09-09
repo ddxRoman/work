@@ -21,7 +21,6 @@ $button = mysqli_fetch_all($button); // Выбирает все строки и�
 </head>
 
 <body>
-
         <div class="container">
         <div class="row align-items-center">
             <div class="border col-md-3 col-sm-6 col-8 " >  
@@ -78,15 +77,15 @@ $button = mysqli_fetch_all($button); // Выбирает все строки и�
             ?>
                 </div>
                 </div>
-                <div class="col-md-8 col-sm-9 col-12 frame">
+                <div class="col-md-7 col-sm-9 col-12 frame">
                      <iframe name="1" src="folders/news.php">
                     
                 </iframe>
                 </div>
-                <div class="col-md-3 col-sm-12 text-center rmenu" >
+                <div class="col-md-4 col-sm-12 text-center rmenu" >
  <?php if ($_SESSION['user']['status'] == 9) { ?><!-- Берем Роль пользователя и проверяем если она равно 9 (у нас это админ) то показываем Правое меню-->
                 <div class="rmenu">
-                    <iframe name="task" src="Taskmanager/Task.php">
+                    <iframe name="task" src="Taskmanager/task_bootwtrap.php">
                     </iframe>
                 </div>
             <?  } else { 
@@ -103,12 +102,12 @@ $button = mysqli_fetch_all($button); // Выбирает все строки и�
 <footer>
             <div class="container-fluid">
                 <div class="row align-items-center">
-                    <div class="col-md-3 col-sm-2 col-5 text-center"><?require_once 'function/weather.php';?></div>
+                    <div class="col-md-3 col-sm-2 col-5 text-start"><?require_once 'function/weather.php';?></div>
                     <div class="col-md-6 col-sm-8 col-2 text-center"><p class="ink"><img src="file/icons/Logo.png" alt="test"><br>
                  ORStudio <br> Оксентий Роман Сергеевич Студио <br> Copyright 2022-2023 </p></div>
                     <div class="col-md-3 col-sm-2 col-5 text-center">
                         
-                        <div id="clock" class="clock">         
+                        <div id="clock" class=" h3 clock text-end">         
             <script src="JavaScript/clock.js">
             </script> <!-- Подключение файла с часами-->
             </div><!-- ЧАСЫ-->
