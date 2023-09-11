@@ -18,18 +18,17 @@ body {
   box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 15%);
 }
 
-.accordion__header {
-    margin-top: -15px;
-  display: flex;
+
+.accordion-header {
   justify-content: space-between;
   align-items: center;
-  padding: 0.05rem;
   color: #fff;
   font-weight: 500;
-   cursor: pointer;
-  transition: background-color 0.2s ease-out;
-  height: 20px;
+  cursor: pointer;
+   transition: background-color 0.2s ease-out; 
+   height: 30px; 
   border: 1px solid #8f802b ;
+  display: flex;
 }
 
 .accordion__header::after {
@@ -50,18 +49,9 @@ body {
   color: #000000;
 }
 
-.accordion__header:hover {
-  background-color: #ff0000;
-  height: 30px;
-  border: 2px solid #ffd900;
-  font-size: 14pt;
-  font-weight: 600;
-}
 
-/*.accordion__header:hover {*/
-/*  background-color: #ff0000;*/
-/*  height: 27px;*/
-/*}*/
+
+
 
 .accordion__item:not(.accordion__item_show) .accordion__header {
    border-bottom-right-radius: 0.25rem;
@@ -164,7 +154,8 @@ body::-webkit-scrollbar-thumb {
                 color: #4d4d4d;
                 font-weight: 400;
                 font-size: 14px;
-                /* margin-left: 5%; */
+                align-items: end;
+                margin-right: 5%;
               }
               .prioritet-task1{
                 color: #56973c;

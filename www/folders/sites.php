@@ -13,6 +13,7 @@ require_once "../function/checkaut.php";
 </head>
 <body class="iframe-body">
     <div class="folders">
+<a href="https://kolbiko.com/" target="_blank"><button>Колбико</button></a>
 <a href="https://master-gadget.ru" target="_blank"><button>Мастер Гаджет</button></a>
 <a href="https://justyabloko.ru" target="_blank"><button>Яблоко</button></a>
 <a href="https://dontelevizor.ru/" target="_blank"><button>Телевизор</button></a> 

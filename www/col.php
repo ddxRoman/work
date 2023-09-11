@@ -57,7 +57,8 @@ $button = mysqli_fetch_all($button); // Выбирает все строки и�
             <a href="https://calendar.google.com/calendar/u/0/r?cid=medcloud.pro@gmail.com" target="_blank"><button>Календарь</button></a>
             <a href="folders/countsymbolForm.php" target="1"><button>Подсчёт</button></a>
            </div><!-- Тут заканчивается МИС панель-->
-    <hr class="misPanel-hr" width="85%"><!-- ХРка полоска -->
+    <hr class="misPanel-hr" width="100%">
+    <!-- ХРка полоска -->
         <div class="container">
             <div class="row">
                 <div class="col-md-1 col-sm-3 col-4">
@@ -77,25 +78,29 @@ $button = mysqli_fetch_all($button); // Выбирает все строки и�
             ?>
                 </div>
                 </div>
-                <div class="col-md-7 col-sm-9 col-12 frame">
+                <div class="col-md-6 col-sm-9 col-12 frame">
                      <iframe name="1" src="folders/news.php">
                     
                 </iframe>
                 </div>
-                <div class="col-md-4 col-sm-12 text-center rmenu" >
- <?php if ($_SESSION['user']['status'] == 9) { ?><!-- Берем Роль пользователя и проверяем если она равно 9 (у нас это админ) то показываем Правое меню-->
+                <div class="col-md-5 col-sm-12 text-center rmenu" >
+ <?php 
+//  if ($_SESSION['user']['status'] == 9) { 
+    ?>
+    <!-- Берем Роль пользователя и проверяем если она равно 9 (у нас это админ) то показываем Правое меню-->
                 <div class="rmenu">
-                    <iframe name="task" src="Taskmanager/task_bootwtrap.php">
+                    <iframe name="task" src="Taskmanager/task_bootstrap.php">
                     </iframe>
                 </div>
-            <?  } else { 
+            <?  
+            // } else { 
             ?>
-            <div class="rmenu">
+            <!-- <div class="rmenu">
                     <iframe name="task" src="Taskmanager/task_user.php">
                     </iframe>
-                </div>
+                </div> -->
             <?
-            }
+            // }
             ?>
             </div>
 <hr>

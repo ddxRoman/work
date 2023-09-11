@@ -11,12 +11,12 @@
 </head>
 <body class="iframe-body">
     <div class="folders">
-<a href="http://medcloud.csd.com.ua/" target="_blank"><button>CSD</button></a>
-
-<a href="https://knpumbl.lab.helsi.pro/" target="_blank"><button>KNPUMBL</button></a>
-<a href="http://crm.newdiagnostics.ua/" target="_blank"><button>ND</button></a>
+            <a href="http://medcloud.csd.com.ua/" target="_blank"><button>CSD</button></a>
+            <a href="https://knpumbl.lab.helsi.pro/" target="_blank"><button>KNPUMBL</button></a>
+            <a href="http://crm.newdiagnostics.ua/" target="_blank"><button>ND</button></a>
             <a href="https://miskbp.medcloud.pro/" target="_blank"><button>Medlab</button></a> 
             <a href="https://medcloud.astra-dia.ua/" target="_blank"><button>ASTRA</button></a>
+            <a href="https://dclinic.analizi.pro" target="_blank"><button>Dclinik</button></a>
             <a href="https://mis.mediland.com.ua/" target="_blank"><button>mediLAND</button></a>
             <a href="https://mis.revmo.zp.ua/" target="_blank"><button>Revmo</button></a>
             <a href="https://study.helsi.pro/" target="_blank"><button>HelsiPro</button></a>
