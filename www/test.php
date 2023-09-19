@@ -3,45 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <!-- Свои стили подлкючать после бутстрапа -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Свои стили подлкючать после бутстрапа -->
+    <title>Bootstrap Leaening</title>
 </head>
 <body>
 
-<div class="container">
-  <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-0">
-    <div class="col">
-      <div class="p-3 border bg-light">Колонка ряда</div>
-    </div>
-    <div class="col">
-      <div class="p-3 border bg-light">Колонка ряда</div>
-    </div>
-    <div class="col">
-      <div class="p-3 border bg-light">Колонка ряда</div>
-    </div>
-    <div class="col">
-      <div class="p-3 border bg-light">Колонка ряда</div>
-    </div>
-    <div class="col">
-      <div class="p-3 border bg-light">Колонка ряда</div>
-    </div>
-    <div class="col">
-      <div class="p-3 border bg-light">Колонка ряда</div>
-    </div>
-    <div class="col">
-      <div class="p-3 border bg-light">Колонка ряда</div>
-    </div>
-    <div class="col">
-      <div class="p-3 border bg-light">Колонка ряда</div>
-    </div>
-    <div class="col">
-      <div class="p-3 border bg-light">Колонка ряда</div>
-    </div>
-    <div class="col">
-      <div class="p-3 border bg-light">Колонка ряда</div>
-    </div>
-  </div>
-</div>
+<? $products=54483;?>
 
-</body>
+<script>
+  function writeId() {
+
+    <?$id=$products[0]?>
+    alert(<?=$id?>)
+  }
+</script>
+
+<input type="button" onclick="writeId()" value="Считать кроликов!">
+
 </html>

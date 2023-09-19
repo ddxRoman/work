@@ -16,7 +16,7 @@
         $comment = mysqli_query($connect, "SELECT * FROM `comments` ORDER BY `id` ASC "); // Подключение к определенной таблице, и получение Статуса записи
         $comment = mysqli_fetch_all($comment); // Выбирает все строки из набора $Comment и помещает их в массив  $Comments
         foreach ($product as $products) { // Перебор массива $product c его записью в массив $productS
-            $iLoveMyPrettyWife++ ?>
+            $iLoveMyPrettyWife++; ?>
 <div class="accordion accordion-flush" id="accordionFlushExample">
   <div class="accordion-item">
 
@@ -64,12 +64,26 @@
                                         <option value="1">Надо сделать</option>
                                         <option value="0">Backlog</option>
                                     <?
+                                    
                                     } ?>
                                 </select>
-                                <form action="../action/accept_delete.php?id=<?= $products[0] ?>" method="post" name="real_delete">
-                                    <a href="../action/accept_delete.php?id=<?= $products[0] ?>"><img src="/file/icons/delete.png" width="16px" height="16px"></a>
-                                </form>
+                                <div  data-bs-toggle="modal" data-bs-target="#start">
+                    <div class="itd_triangle"><img width="16px"  src="../file/icons/delete.png">
+                    
+
+                </div>
+
+
+                    </div>
                             </form>
+                    <input type="button" onclick="writeId()" value="ID">
+<script>
+  function writeId() {
+    <?$id=$products[0];?>
+    alert(<?=$id?>)
+  }
+</script>
+
                             <div class="accordion__content">
                             <pre> <?= $products[2]; ?></pre><? 
                                 if($products[8]!="NULL"){
@@ -256,6 +270,26 @@
 <? }
         }
 ?>
+
+<div class="modal fade" id="start" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Вы действительно хотите удалить?</h5>
+      </div>
+      <div class="modal-body">
+      <div class='embed-container'>
+      <a href="delete_task.php?id=<?=$id?>"><button type="button">Да</button></a>
+      <button type="button">Нет</button>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 </body>
 </html>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+

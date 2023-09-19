@@ -67,8 +67,7 @@ $button = mysqli_fetch_all($button); // Выбирает все строки и�
             <a href="action/users/settings.php" target="_blank"><button><img src="file/icons/settings.png" >Настройки</button></a>
             <a href="https://meet.google.com/" target="_blank"><button><img src="file/icons/yabridg.png">Meet</button></a>
             <a href="https://mail.google.com" target="_blank"><button>Почта</button></a>
-            <a href="https://topvisor.com/project/keywords/7394510/#&volumeType=6&priceType=P11" target="_blank"><button><b>TOP</b><i>visor</i></button></a>
-            <a href="https://docs.google.com/spreadsheets/d/1831n04opuq0QCen2fzRKy6H8lgLxIxD5sODwKxvh6s4/edit#gid=1808514170" target="_blank"><button>Шорт Аналики</button></a>
+            <a href="https://topvisor.com/projects/" target="_blank"><button><b>TOP</b><i>visor</i></button></a>
             <a href="https://jira.bizonoff-dev.net/projects/KINDPEOPLE/" target="_blank"><button>Наша Жира</button></a>
             <a href="folders/countsymbolForm.php" target="1"><button>Подсчёт</button></a>
             <a href="folders/creeds.php" target="1"><button>Доступы</button></a>
@@ -92,13 +91,13 @@ $button = mysqli_fetch_all($button); // Выбирает все строки и�
 
              </div>
             <div class="container frame">
-                <iframe name="1" src="folders/news.php">
+                <iframe name="1" src="folders/sites.php">
                     
                 </iframe>
             </div>
             <?php if ($_SESSION['user']['status'] == 9) { ?><!-- Берем Роль пользователя и проверяем если она равно 9 (у нас это админ) то показываем Правое меню-->
                 <div class="rmenu">
-                    <iframe name="task" src="Taskmanager/Task.php">
+                    <iframe name="task" src="Taskmanager/task_bootstrap.php">
                     </iframe>
                 </div>
             <?  } else { 
