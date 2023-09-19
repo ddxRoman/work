@@ -71,7 +71,7 @@ if ($role!= 1) {
        <div class="body">   <!-- Начало Тела сайта -->
             <div class="lmenu"> 
                 <div class="links">
-                    
+                <a href="Test/margin.php"><button>Отступы</button></a>
                     
                 </div>
              </div>

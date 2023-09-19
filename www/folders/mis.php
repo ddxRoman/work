@@ -25,10 +25,5 @@
             <a href="https://studylabs.helsi.pro" target="_blank"><button>СтадилабС</button></a>
             <a href="https://test.lab.helsi.pro/" target="_blank"><button>ХелсиТест</button></a>
             </div>
-<!--<a href="" target="_blank"><button></button></a>
-<a href="" target="_blank"><button></button></a>
-<a href="" target="_blank"><button></button></a>
-<a href="" target="_blank"><button></button></a> -->
-
 </body>
 </html>

@@ -21,13 +21,12 @@ body {
 
 .accordion-header {
   justify-content: space-between;
-  align-items: center;
   color: #fff;
   font-weight: 500;
   cursor: pointer;
    transition: background-color 0.2s ease-out; 
    height: 30px; 
-  border: 1px solid #8f802b ;
+  /* border: 1px solid #8f802b ; */
   display: flex;
 }
 
