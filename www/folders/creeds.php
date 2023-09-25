@@ -26,7 +26,7 @@ $creed = mysqli_fetch_all($creed); // Выбирает все строки из 
     <tbody>
         <? foreach($creed as $creeds){?>
         <tr>
-            <th><a href="<?=$creeds[2]?>" class="link-dark" target="_blank"><?=$creeds[1]?></a> </th>
+            <th><a href="<?=$creeds[2]?>" class="link-dark" target="_blank"><?=$creeds[1]?></a> </th> <!-- Вот тут добавил новое-->
             <th><?=$creeds[3]?></th>
             <th><?=$creeds[4]?></th>
         </tr>
