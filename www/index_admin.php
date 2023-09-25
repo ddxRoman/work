@@ -3,10 +3,9 @@
 require_once "function/checkrole.php";
 require_once "action/connect.php";
 require_once "action/users/StyleAndSettings.php";
-if ($role!= 1) {
-    header('Location: index.php');
-    }
-
+//if ($role!= 1) {
+//    header('Location: index.php');
+//    }
 ?>
 
 <!DOCTYPE html>
@@ -26,18 +25,19 @@ if ($role!= 1) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#ff0000"/>
     <link rel="manifest" href="JavaScript/manifest.json">
-    <script>
+    <script> //todo Вот тут туду тест
+
         if('serviceWorker' in navigator) {
           navigator.serviceWorker.register('sw.js');
-        };
+        }
       </script>
-
+<!-- todo tpdo in html-->
 </head>
 
 <body>
     <div class="all">
         <!-- Общий блок на всю страницу-->
-        <div class="header">
+        <div class="header"> <!-- todo-test отдельные таски не входящие в фильтр-->
             <!-- Общий Блок на шапку-->
             <div class="quick_transition">
                 <!-- Блок С полями в левом верхнем углу-->
@@ -95,9 +95,7 @@ if ($role!= 1) {
         </div>
         <hr class="footer-hr">
         <div class="footer">
-            
                 <div></div>
-            
             <div class="refresh">
             <p class="ink"><br><img src="file/icons/Logo.png" alt="test"><br>
                  ORStudio <br> Оксентий Роман Сергеевич Студио <br> Copyright 2022-2023 </p>

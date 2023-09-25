@@ -21,12 +21,12 @@ $creed = mysqli_fetch_all($creed); // Выбирает все строки из 
             <th>Прод</th>
             <th>Логин</th>
             <th>Пароль</th>
-        </tr>
+        </tr>`
     </thead>
     <tbody>
         <? foreach($creed as $creeds){?>
         <tr>
-            <th><?=$creeds[1]?></th>
+            <th><a href="<?=$creeds[2]?>" class="link-dark" target="_blank"><?=$creeds[1]?></a> </th>
             <th><?=$creeds[3]?></th>
             <th><?=$creeds[4]?></th>
         </tr>
